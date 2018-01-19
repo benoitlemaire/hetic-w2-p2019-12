@@ -9,14 +9,24 @@ var isProd = process.env.NODE_ENV === 'production';
 var cssDev = ['style-loader', 'css-loader', 'sass-loader']
 var cssProd = ExtractTextPlugin.extract({
   fallback: 'style-loader',
-  use: ['css-loader', 'sass-loader']
+  use: ['css-loader',
+       {
+          loader: 'postcss-loader',
+            options: {
+              plugins: function () {
+                return [
+                  require('autoprefixer')
+                ];
+              }
+            }
+          },
+        'sass-loader']
 });
 var cssConfig = isProd ? cssProd : cssDev;
 
 module.exports = {
   entry: {
-    'index': './src/js/index.js',
-    'page2': './src/js/page2.js'
+    'index': './src/js/index.js'
   },
   devtool: isProd ? '' : 'eval-source-map',
   output: {
@@ -70,12 +80,6 @@ module.exports = {
       title: 'Index',
       template: './src/pages/index.pug',
       chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Page 2',
-      template: './src/pages/page2.pug',
-      filename: 'page2.html',
-      chunks: ['page2']
     }),
     new ExtractTextPlugin({
       filename: 'styles.css',
