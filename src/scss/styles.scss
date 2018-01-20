@@ -1,16 +1,35 @@
+@import 'blocs/reset';
 @import 'blocs/header';
+@import 'blocs/menu';
+@import 'blocs/about';
+@import 'blocs/cook';
+@import 'blocs/tutorial';
 @import 'blocs/footer';
 
 @font-face {
- font-family: "Roboto";
- src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-family: 'Futura BdCn BT';
+    src: url('../fonts/FuturaBT-BoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../fonts/FuturaBT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1, p {
+	font-size: 20px;
+	letter-spacing: 0;
 }
 
 h1 {
-  color: blue;
-  font-family: "Roboto", Arial;
+	font-family: 'Futura BdCn BT';
+	text-transform: uppercase;
+}
 
-  &:hover {
-    color: green;
-  }
+p {
+    font-family: 'Futura Md BT';
 }
