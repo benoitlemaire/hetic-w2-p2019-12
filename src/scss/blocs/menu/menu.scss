@@ -1,0 +1,20 @@
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+.navigation {
+
+}
+
+.navigation__burger {
+    background: blue;
+
+    &.is-open {
+        background: red;
+    }
+}
+
+.navigation__normal {
+    @include small {
+        display: none;
+    }
+}

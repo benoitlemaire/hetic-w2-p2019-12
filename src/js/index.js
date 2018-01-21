@@ -1,6 +1,5 @@
 import '../scss/styles.scss';
 
-import { User } from './user';
+import { Menu } from './menu';
 
-let name = 'Bastien';
-const user = new User(name);
+const menu = new Menu();

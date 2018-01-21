@@ -1,0 +1,14 @@
+@import 'variables';
+
+
+// Media queries
+@mixin medium {
+  @media (max-width: #{$mediumScreen}) {
+    @content;
+  }
+}
+@mixin small {
+  @media (max-width: #{$smallScreen}) {
+    @content;
+  }
+}
