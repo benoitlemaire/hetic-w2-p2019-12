@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="37px" viewBox="0 0 67 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-burger</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.9%" y="-3.6%" width="101.8%" height="110.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="accueil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-26.000000, -72.000000)">
+        <g id="header" fill="#000000" fill-rule="nonzero">
+            <g id="navigation" filter="url(#filter-1)">
+                <g transform="translate(0.000000, 40.000000)" id="Group-2">
+                    <g transform="translate(30.000000, 0.000000)">
+                        <g id="menu-burger" transform="translate(29.500000, 48.500000) scale(-1, 1) translate(-29.500000, -48.500000) translate(0.000000, 34.000000)">
+                            <path d="M1.84355844,3.65174611 L57.1516909,3.65174611 C58.1694026,3.65174611 58.9952494,2.84184974 58.9952494,1.84412953 C58.9952494,0.846259067 58.1692494,0.0365129534 57.1516909,0.0365129534 L1.84355844,0.0365129534 C0.825846753,0.0365129534 0,0.846409326 0,1.84412953 C0,2.84184974 0.826,3.65174611 1.84355844,3.65174611 Z" id="Shape"></path>
+                            <path d="M57.1516909,12.6901295 L1.84355844,12.6901295 C0.825846753,12.6901295 0,13.5000259 0,14.4977461 C0,15.4954663 0.826,16.3053627 1.84355844,16.3053627 L57.1516909,16.3053627 C58.1694026,16.3053627 58.9952494,15.4954663 58.9952494,14.4977461 C58.9952494,13.5000259 58.1694026,12.6901295 57.1516909,12.6901295 Z" id="Shape"></path>
+                            <path d="M57.1516909,25.3437461 L20.2796026,25.3437461 C19.2618909,25.3437461 18.4360442,26.1536425 18.4360442,27.1513627 C18.4360442,28.1492332 19.2620442,28.9589793 20.2796026,28.9589793 L57.1516909,28.9589793 C58.1694026,28.9589793 58.9952494,28.1490829 58.9952494,27.1513627 C58.9954026,26.1534922 58.1694026,25.3437461 57.1516909,25.3437461 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -10,5 +10,6 @@ Running ```npm run build``` will generate productions files in the ```/dist``` f
 ### Site en prod
 https://romantic-bartik-626d5e.netlify.com/
 
-### Indentation
-Utilisez 2 espaces pour indenter sinon ça va faire crash le serveur => check error dans le terminal
+### UTILISEZ DES ESPACES POUR INDENTER
+Ou configurer votre IDE/Editeur de texte pour convertir les tabs en espaces.<br>
+sinon ça va faire crash le serveur => check error dans le terminal
