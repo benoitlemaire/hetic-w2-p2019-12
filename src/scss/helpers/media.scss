@@ -1,0 +1,23 @@
+// Media queries
+$largeScreen: 1440px;
+$mediumScreen: 768px;
+$smallScreen: 375px;
+
+
+@mixin large {
+  @media only screen and (min-width: #{$largeScreen}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: #{$mediumScreen}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media only screen and (min-width: #{$smallScreen}) {
+    @content;
+  }
+}

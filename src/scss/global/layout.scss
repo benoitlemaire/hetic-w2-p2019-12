@@ -1,0 +1,41 @@
+@import 'blocs/header/header';
+@import 'blocs/menu/menu';
+@import 'blocs/about/about';
+@import 'blocs/cook/cook';
+@import 'blocs/tutorial/tutorial';
+@import 'blocs/footer/footer';
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/media';
+@import 'helpers/fonts';
+
+h1 {
+    font-family: 'Futura BdCn BT';
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Futura Md BT';
+    font-size: 18px;
+}
+
+.wrapper {
+    height: 200vh;
+    margin: 0 auto;
+
+    @include small {
+      min-width: $smallScreen;
+      background-color: green;
+    }
+
+    @include medium {
+      min-width: $mediumScreen;
+      background-color: yellow;
+    }
+
+    @include large {
+      min-width: $largeScreen;
+      background-color: blue;
+    }
+}
