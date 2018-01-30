@@ -1,16 +1,15 @@
-@import 'helpers/mixins';
+@import 'helpers/media';
 @import 'helpers/variables';
+@import 'helpers/fonts';
 
 .menu {
     width: 100%;
     height: 66px;
     position: fixed;
-    background: #FFFF;
+    background: $white;
 }
 
 .menu__header {
-    width: 100%;
-    height: 66px;
     display: flex;
     justify-content: space-between;
 
@@ -20,19 +19,12 @@
     }
 }
 
-.menu__burgerIcon {
+.menu__burgerIcon--open {
     cursor: pointer;
     margin-left: 15px;
     transition: 1s linear;
     transform: translateX(0);
     z-index: 3;
-}
-
-// @TODO : Voir comment je peux me demerder avec le open 
-
-.menu__burgerIcon--open {
-    transform: translateX(260%);
-    transition: 1s linear;
 }
 
 .menu__logo {
@@ -48,13 +40,75 @@
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: #FFFF;
+    color: $white;
 }
 
 .menu__burgerContent {
     width: 75%;
-    height: 200px;
-    background: #FFFF;
-    transform: translateX(-100%);
+    height: 100vh;
+    background: $white;
+    transform: translateX(0%);
     transition: 1s ease-in;
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,0.10);
+    padding-top: 1px; // @TODO Trouver pourquoi sans ce hack le bloc ne prend pas toute la hauteur ?
+}
+
+.menu__nav {
+    margin-left: 15px;
+    font-family: 'Futura Md BT';
+
+    & a {
+        color: $black;
+        text-decoration: none;
+        font-size: 30px;
+        width: 100%;
+
+            &:hover {
+                text-decoration:line-through;
+            }
+
+    }
+
+    & li {
+        list-style-type: none;
+        margin-top: 50px;
+    }
+    
+}
+
+.menu__list {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 117px;
+    border: none;
+    background: url(../img/nav/arrow_down.png) no-repeat 100% center;
+    color: $black;
+    font-size: 14px;
+    font-family: 'Futura Md BT';
+    margin-top: 50px;
+    margin-left: 15px;
+    height: 34px;
+}
+
+
+.menu__socialBar {
+    width: 75%;
+    display: flex;
+    margin-top: 50px;
+
+    & img {
+        width: 38px;
+        height: 38px;
+        margin-left: 15px;
+    }
+
+}
+
+.menu__copyright {
+    margin-top: 25px;
+    margin-left: 15px;
+    display: block;
+    font-size: 11px;
+    font-family: 'Futura Md BT';
 }
