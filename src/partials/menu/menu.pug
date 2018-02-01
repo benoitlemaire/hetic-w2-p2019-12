@@ -1,7 +1,7 @@
 <nav class="menu">
 
   <div class="menu__header">
-    <div class="menu__burgerIcon">
+    <div class="menu__burgerIcon--open">
       img(src=require("../../img/nav/icon-menu.svg") alt="Burger Icon")
     </div>
     <div class="menu__logo">
@@ -12,7 +12,49 @@
     </div>
 
     <div class="menu__burgerContent">
-      <p>Sub menu test</p>
+      <ul class="menu__nav">
+        <a href=“#“><li>About us</li></a>
+        <a href=“#“><li>Tutorial</li></a>
+        <a href=“#“><li>Subscribe</li></a>
+      </ul>
+ 
+    <div class="menu__list--hiden">
+      <li>Test 1</li>
+      <li>Test 2</li>
+      <li>Test 3</li>
+    </div>
+    
+    <select class="menu__list">
+      <option>Deutschland</option>
+      <option>Polski</option>
+      <option>Portugal</option>
+      <option>España</option>
+      <option>Россия</option>
+      <option>Türkiye</option>
+      <option>France</option>
+      <option>United Kingdon</option>
+    </select>
+    
+    <div class="menu__socialBar">
+      <div>
+      <a href="#">
+        img(src=require("../../img/nav/instagram.jpg") alt="Icone Instagram")
+      </a>
+      </div>
+      <div>
+        <a href="#">
+          img(src=require("../../img/nav/facebook.png") alt="Icone Facebook")
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          img(src=require("../../img/nav/twitter.png") alt="Icone Twitter")
+        </a>
+      </div>
+    </div>
+
+    <span class="menu__copyright">2017 Misen Inc. All rights reserved.</span>
+
     </div>
   </div>
 

@@ -9,9 +9,12 @@
 @import 'helpers/media';
 @import 'helpers/fonts';
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
-    font-family: 'Futura BdCn BT';
-    text-transform: uppercase;
+    font-family: 'Futura Md BT';
     font-size: 20px;
 }
 
@@ -21,21 +24,20 @@ p {
 }
 
 .wrapper {
-    height: 200vh;
-    margin: 0 auto;
+  margin: 0 auto;
 
-    @include small {
-      min-width: $smallScreen;
-      background-color: green;
-    }
+  @include small {
+    min-width: $smallScreen;
+    background-color: green;
+  }
 
-    @include medium {
-      min-width: $mediumScreen;
-      background-color: yellow;
-    }
+  @include medium {
+    min-width: $mediumScreen;
+    background-color: yellow;
+  }
 
-    @include large {
-      min-width: $largeScreen;
-      background-color: blue;
-    }
+  @include large {
+    min-width: $largeScreen;
+    background-color: blue;
+  }
 }
