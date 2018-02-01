@@ -7,6 +7,8 @@
     height: 66px;
     position: fixed;
     background: $white;
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,0.10);
+    z-index: 2;
 }
 
 .menu__header {
@@ -47,7 +49,7 @@
     width: 75%;
     height: 100vh;
     background: $white;
-    transform: translateX(0%);
+    transform: translateX(-100%);
     transition: 1s ease-in;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,0.10);
     padding-top: 1px; // @TODO Trouver pourquoi sans ce hack le bloc ne prend pas toute la hauteur ?
@@ -91,6 +93,9 @@
     height: 34px;
 }
 
+.menu__list--hiden {
+    display: none;
+}
 
 .menu__socialBar {
     width: 75%;

@@ -14,8 +14,7 @@
 }
 
 h1 {
-    font-family: 'Futura BdCn BT';
-    text-transform: uppercase;
+    font-family: 'Futura Md BT';
     font-size: 20px;
 }
 
@@ -25,7 +24,6 @@ p {
 }
 
 .wrapper {
-  height: 200vh;
   margin: 0 auto;
 
   @include small {
