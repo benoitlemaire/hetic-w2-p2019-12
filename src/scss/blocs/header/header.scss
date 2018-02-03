@@ -1,8 +1,10 @@
 @import 'helpers/media';
+@import 'helpers/fonts';
 
 
 .header {
     width:100%;
+    margin: 0 auto;
 }
 
 .header__mainImage  {
@@ -14,24 +16,29 @@
 .header__blocTitle {
     width: 100%;
     text-align: center;
-    margin: 50px auto;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.header__titleSquare {
+    width: 12px;
+    height: 12px;
+    background: #FBCEB0;
+    display: block;
 }
 
 .header__mainTitle {
     @include small {
-        font-size: 35px;
+        font-size: 33px;
     }
 }
 
 .header__titleDesc {
-    font-size: 15px;
-    margin: 10px;
-}
-
-.header__titleSquare {
-    width: 20px;
-    height: 20px;
-    background: blue;
+    font-size: 14px;
+    margin: 10px auto;
+    color: #646464;
+    opacity: 0.5;
+    text-align: center;
 }
 
 .header__scroll {
@@ -40,7 +47,7 @@
     position: relative;
     height: 30px;
     border-radius: 10.6px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .header__scrollAnimate {

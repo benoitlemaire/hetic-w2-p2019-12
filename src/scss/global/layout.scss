@@ -21,6 +21,20 @@ h1 {
 p {
     font-family: 'Futura Md BT';
     font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+section h1 {
+  font-family: 'Futura BdCn BT';
+  margin-left: 15px;
 }
 
 .wrapper {

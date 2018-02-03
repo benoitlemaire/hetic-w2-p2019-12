@@ -1,1 +1,8 @@
 @import 'variables';
+
+@mixin square($color) {
+    width: 12px;
+    height: 12px;
+    background: $color;
+    display: block;
+}

@@ -1,0 +1,48 @@
+@import 'helpers/mixins';
+@import 'helpers/fonts';
+@import 'helpers/variables';
+
+
+.about {
+    width: 100%;
+    height: auto;
+}
+
+.about__blocTitle {
+    font-family: 'Futura BdCn BT';
+    margin: 15px auto;
+    font-size: 20px;
+    display: flex;
+}
+
+.about__titleSquare {
+    @include square(#FFE36D);
+}
+
+.about__player {
+    display: flex;
+    align-items: center;
+}
+
+.about__link {
+    font-size: 15px;
+    color: $black;
+    font-family: 'Futura Md BT';
+    margin: 15px 0;
+}
+
+.about__iconLink {
+    max-width: 14px;
+    margin-left: 15px;
+}
+
+.about__image {
+    max-width: 375px;
+    max-height: 450px;
+    width: 100%;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+    }
+}
