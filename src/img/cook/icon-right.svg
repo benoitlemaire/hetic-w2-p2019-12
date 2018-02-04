@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="13px" viewBox="0 0 30 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="accueil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-971.000000, -2240.000000)" stroke-linecap="round">
+        <g id="cook" transform="translate(0.000000, 1630.000000)" stroke="#000000">
+            <g id="Group-4" transform="translate(809.000000, 445.000000)">
+                <g id="vidéo-about" transform="translate(38.000000, 160.000000)">
+                    <g id="Group">
+                        <g id="Group-5" transform="translate(124.000000, 5.000000)">
+                            <path d="M5.5,6.5 L28.5713377,6.5" id="Line-3"></path>
+                            <path d="M0.5,6.5 L2.5,6.5" id="Line-3-Copy"></path>
+                            <path d="M28.5,6.5 L22.5,0.5" id="Line-4"></path>
+                            <path d="M28.5,12.5 L22.5,6.5" id="Line-4" transform="translate(25.500000, 9.500000) scale(-1, 1) translate(-25.500000, -9.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

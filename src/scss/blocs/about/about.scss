@@ -1,0 +1,70 @@
+@import 'helpers/mixins';
+@import 'helpers/fonts';
+@import 'helpers/variables';
+
+.about {
+    width: 100%;
+    height: auto;
+}
+
+.about__blocTitle {
+    @include blocTitle;
+}
+
+.about__titleSquare {
+    @include square(#FFE36D);
+}
+
+.about__mainTitle {
+    @include mainTitle;
+}
+
+.about__player {
+    display: flex;
+    align-items: center;
+}
+
+.about__link {
+    color: $black;
+    font-family: 'Futura Md BT';
+
+    @include small {
+        font-size: 15px;
+        margin: 15px 25px;
+    }
+
+    @include medium {
+        font-size: 30px;
+        margin: 40px 25px;
+    }
+}
+
+.about__iconLink {
+    width: 100%;
+
+    @include small {
+        max-width: 14px;
+        margin-left: 15px;
+    }
+
+    @include medium {
+        max-width: 30px;
+        margin-left: 10px;
+    }
+
+    & img {
+        width: 100%;
+    }
+}
+
+.about__blocImage {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    & img {
+        width: 100%;
+    }
+
+}

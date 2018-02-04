@@ -1,0 +1,72 @@
+@import 'helpers/mixins';
+@import 'helpers/fonts';
+@import 'helpers/variables';
+
+
+.cook {
+    width: 100%;
+    background: #F6F6F6;
+}
+
+.cook__hero {
+    width: 100%;
+    min-height: 352px;
+    background: #EEEEEE;
+    overflow: hidden;
+
+    & img {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+.cook__blocTitle {
+    @include blocTitle;
+}
+
+.cook__mainTitle {
+    @include mainTitle;
+}
+
+.cook__titleSquare {
+    @include square(#63A7FF);
+}
+
+.cook__player {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.cook__link {
+    color: $black;
+    font-family: 'Futura Md BT';
+
+    @include small {
+        font-size: 15px;
+        margin: 15px 25px;
+    }
+
+    @include medium {
+        font-size: 30px;
+        margin: 40px 25px;
+    }
+}
+
+.cook__iconLink {
+    width: 100%;
+
+    @include small {
+        max-width: 14px;
+        margin-left: 15px;
+    }
+
+    @include medium {
+        max-width: 30px;
+        margin-left: 10px;
+    }
+
+    & img {
+        width: 100%;
+    }
+}

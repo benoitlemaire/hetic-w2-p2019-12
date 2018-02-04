@@ -1,1 +1,28 @@
 @import 'variables';
+@import 'fonts';
+@import 'media';
+
+@mixin square($color) {
+    width: 12px;
+    height: 12px;
+    background: $color;
+    display: block;
+}
+
+@mixin blocTitle {
+    font-family: 'Futura BdCn BT';
+    margin: 15px auto;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+@mixin mainTitle {
+    @include small {
+        font-size: 20px;
+    }
+
+    @include medium {
+        font-size: 40px;
+    }
+}

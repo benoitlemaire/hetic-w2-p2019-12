@@ -1,3 +1,105 @@
+@import 'helpers/mixins';
+@import 'helpers/fonts';
+@import 'helpers/variables';
+
 footer {
-  
+    width: 100%;
+}
+
+.footer__blocTitle {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.footer__mainTitle {
+    font-family: 'Futura BdCn BT';
+    color: #646464;
+
+    @include mainTitle;
+
+}
+
+.footer__titleDesc {
+    color: #646464;
+    opacity: 0.5;
+    text-align: center;
+
+    @include small {
+        margin: 10px auto;
+        font-size: 14px;
+    }
+
+    @include medium {
+        font-size: 28px;
+        margin: 40px auto;
+    }
+}
+
+.footer__mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+
+    & input {
+        padding: 24.5px 35px;
+        border: 1px solid #E9E9E9;
+        border-radius: 9px 0 0 9px;
+        box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.1);
+
+        @include small {
+
+        }
+
+        @include medium {
+            width: 50%;
+        }
+    }
+
+    & input::placeholder {
+        color: #BBBBBB;
+        font-size: 13px;
+        font-family: 'Futura Md BT';
+    }
+
+    & div {
+        background: #2E3939;
+        max-width: 78px;
+        min-height: 64px;
+        padding: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    & img {
+        width: 70%;
+    }
+
+}
+
+
+.footer__logo {
+    margin: 40px 0;
+    
+    & img {
+
+        @include medium {
+            width: 60%;
+        }
+    }
+}
+
+.footer__copyright {
+    font-family: 'Futura Md BT';
+    font-size: 11px;
+    margin-top: 30px;
+    display: block;
+
+    @include medium {
+        font-size: 17px;
+    }
 }
