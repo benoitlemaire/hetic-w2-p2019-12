@@ -31,14 +31,25 @@
     @include small {
         font-size: 33px;
     }
+
+    @include medium{
+        font-size: 75px;
+    } 
 }
 
 .header__titleDesc {
-    font-size: 14px;
-    margin: 10px auto;
-    color: #646464;
-    opacity: 0.5;
     text-align: center;
+
+    @incude small {
+        font-size: 14px;
+        margin: 10px auto;
+        color: #646464;
+        opacity: 0.5;
+    }
+
+    @include medium {
+        font-size: 30px;
+    }
 }
 
 .header__scroll {

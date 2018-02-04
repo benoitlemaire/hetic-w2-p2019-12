@@ -20,16 +20,30 @@ h1 {
 
 p {
     font-family: 'Futura Md BT';
-    font-size: 18px;
-    line-height: 27px;
-    text-align: left;
+    
+    @include small {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 25px;
+      line-height: 27px;
+    }
+
+    @include medium {
+      font-size: 28px;
+      text-align: left;
+      margin-left: 25px;
+      line-height: 42px;
+    }
+}
+
+a {
+  margin-left: 25px;
+  color: $black;
 }
 
 section {
-  max-width: 100%;
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
+  margin: 66px auto;
+  height: auto;
 }
 
 section h1 {
