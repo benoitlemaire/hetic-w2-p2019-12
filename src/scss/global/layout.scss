@@ -50,22 +50,3 @@ section h1 {
   font-family: 'Futura BdCn BT';
   margin-left: 15px;
 }
-
-.wrapper {
-  margin: 0 auto;
-
-  @include small {
-    min-width: $smallScreen;
-    background-color: green;
-  }
-
-  @include medium {
-    min-width: $mediumScreen;
-    background-color: yellow;
-  }
-
-  @include large {
-    min-width: $largeScreen;
-    background-color: blue;
-  }
-}

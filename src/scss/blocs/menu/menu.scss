@@ -11,6 +11,64 @@
     z-index: 2;
 }
 
+.menu__large {
+    display: none;
+    height: 66px;
+
+    @include large {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 120px;
+
+        & a {
+            color: $black;
+            text-decoration: none;
+            font-size: 15px;
+
+            &:hover {
+                text-decoration:line-through;
+            }
+        }
+    }
+}
+
+
+.menu__listLarge {    
+    @include large {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Futura Md BT';
+    }
+}
+
+.menu__largeLogo {
+    @include large {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.menu__largeCta {
+    @include large {
+        background: #55C14B;
+        padding: 12px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.menu__largeText {
+   @include large {
+        font-size: 15px;
+        color: #ffff;
+        margin-left: 0;
+   }
+}
+
 .menu__header {
     display: flex;
     justify-content: space-between;
@@ -19,6 +77,15 @@
         display: flex;
         align-items: center;
     }
+
+    @include large {
+        display: none;
+    }
+    
+    & a {
+        color: red;
+    }
+
 }
 
 .menu__burgerIcon--open {
@@ -53,8 +120,6 @@
     transform: translateX(-100%);
     transition: 1s ease-in;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,0.10);
-    padding-top: 1px; // @TODO Trouver pourquoi sans ce hack le bloc ne prend pas toute la hauteur ?
-
 }
 
 .menu__nav {
