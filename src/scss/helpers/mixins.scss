@@ -25,4 +25,9 @@
     @include medium {
         font-size: 40px;
     }
+
+    @include large {
+        font-size: 20px;
+        text-align: right;
+    }
 }

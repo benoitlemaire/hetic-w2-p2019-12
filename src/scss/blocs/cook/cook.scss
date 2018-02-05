@@ -2,34 +2,65 @@
 @import 'helpers/fonts';
 @import 'helpers/variables';
 
-
 .cook {
     width: 100%;
     background: #F6F6F6;
+    display: flex;
+    padding-top: 170px;
+    align-items: flex-end;
+    padding-bottom: 70px;
 }
 
 .cook__hero {
-    width: 100%;
-    min-height: 352px;
-    background: #EEEEEE;
-    overflow: hidden;
+
+    @include large {
+        min-width: 561px;
+        min-height: 573px;
+        width: 30%;
+        background: #EEEEEE;
+        margin-left: 85px;
+        position: relative;
+    }
 
     & img {
-        width: 70%;
-        margin-top: 20px;
+        @include large {
+            position: absolute;
+            right: -60px;
+            top: -35px;
+        }
     }
 }
 
 .cook__blocTitle {
-    @include blocTitle;
+    @include large {
+        margin: auto;
+        position: relative;
+    }
 }
 
 .cook__mainTitle {
-    @include mainTitle;
+    @include large {
+        margin: 40px 0;
+    }
+}
+
+.cook__desc {
+    @include large {
+        font-size: 20px;
+        margin: 0;
+        width: 79%;
+        line-height: 30px;
+    }
 }
 
 .cook__titleSquare {
     @include square(#63A7FF);
+
+    @include large {
+        position: absolute;
+        top: 45px;
+        left: -37px;
+    }
 }
 
 .cook__player {
@@ -50,6 +81,11 @@
     @include medium {
         font-size: 30px;
         margin: 40px 25px;
+    }
+
+    @include large {
+        font-size: 15px;
+        margin: 15px 0;
     }
 }
 

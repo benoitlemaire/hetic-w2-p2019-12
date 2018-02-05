@@ -4,10 +4,24 @@
 
 .tutorial {
     width: 100%;
+
+    @include large {
+        padding: 0px 85px;
+    }
 }
 
 .tutorial__blocTitle {
-    @include blocTitle;
+   @include large {
+   }
+}
+
+.tutorial__wrapper {
+    @include large {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
 }
 
 .tutorial__titleSquare {
@@ -15,7 +29,16 @@
 }
 
 .tutorial__mainTitle {
-    @include mainTitle;
+    @include large {
+        font-size: 20px;
+    }
+}
+
+.tutorial__desc {
+    @include large {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 .tutorial__link {
@@ -33,19 +56,38 @@
         font-size: 30px;
         margin: 40px 25px;
     }
+
+    @include large {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+.tutorial__cardsLarge {
+    @include large {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.tutorial__cards {
+    display: flex;
 }
 
 .tutorial__card {
     border-radius: 0 0 9px 9px;
     box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.1);
-    // display: flex; @TODO Trouver pk ça pète toute la card
-
+    
     @include small {
         width: 100%;
     }
 
     @include medium {
         width: 40%;
+    }
+
+    @include large {
+        display: none;
     }
 
     & .tutorial__cardImage {
@@ -93,6 +135,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+
+    @include large {
+        display: none;
+    }
 
     & span {
         width: 10px;
