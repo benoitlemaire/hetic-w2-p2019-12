@@ -134,18 +134,18 @@
         display: none;
     }
 
-    & .tutorial__cardImage {
-        max-width: 100%;
-
-        @include medium {
-            max-height: 200px;
-            overflow: hidden;
-        }
-    }
-
     & img {
         width: 100%;
         padding: 2px;
+    }
+}
+
+.tutorial__cardImage {
+    max-width: 100%;
+
+    @include medium {
+        max-height: 200px;
+        overflow: hidden;
     }
 }
 
@@ -215,29 +215,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @include small {
-        display: none;
-    }
-
-    @include medium {
-        margin-top: 40px;
-    }
-
-    @include large {
-        display: none;
-    }
-
-    & span {
-        width: 10px;
-        margin-left: 10px;
-        height: 10px;
-        border-radius: 60px;
-        border: 1px solid #E7E7E7;
-        cursor: pointer;
-    }
+    margin-top: 50px;
    
     .active {
         background: #E7E7E7;
     }
+}
+
+.tutorial__bullet--item {
+    width: 10px;
+    margin-left: 10px;
+    height: 10px;
+    border-radius: 60px;
+    border: 1px solid #E7E7E7;
+    cursor: pointer;
 }
