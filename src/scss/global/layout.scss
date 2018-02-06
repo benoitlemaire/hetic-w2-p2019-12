@@ -31,7 +31,11 @@ p {
     @include medium {
       font-size: 28px;
       text-align: left;
-      margin-left: 25px;
+      margin: 0 25px;
+      line-height: 27px;
+    }
+
+    @include large {
       line-height: 42px;
     }
 }
