@@ -5,17 +5,29 @@
 .tutorial {
     width: 100%;
 
+    @include small {
+        padding: 0 15px;
+    }
+
+    @include medium {
+        padding: 0 30px;
+    }
+
     @include large {
         padding: 0px 85px;
     }
 }
 
-.tutorial__blocTitle {
-   @include large {
-   }
-}
-
 .tutorial__wrapper {
+    display: flex;
+    align-items: center;
+
+    @include medium {
+        display: flex; 
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
     @include large {
         display: flex;
         align-items: center;
@@ -29,12 +41,30 @@
 }
 
 .tutorial__mainTitle {
+
+    @include small {
+        margin: 35px 15px;
+    }
+
+    @include medium {
+        font-size: 40px;
+        margin-left: 25px;
+    }
+
     @include large {
         font-size: 20px;
     }
 }
 
 .tutorial__desc {
+    @include small {
+        margin-bottom: 35px;
+    }
+
+    @include medium {
+        margin-left: 35px;
+    }
+
     @include large {
         font-size: 20px;
         text-align: center;
@@ -49,12 +79,12 @@
 
     @include small {
         font-size: 15px;
-        margin: 15px 25px;
+        margin: 35px 25px;
     }
 
     @include medium {
         font-size: 30px;
-        margin: 40px 25px;
+        margin: 40px 35px 60px 35px;
     }
 
     @include large {
@@ -64,6 +94,14 @@
 }
 
 .tutorial__cardsLarge {
+    @include small {
+        display: none;
+    }
+
+    @include medium {
+        display: none;
+    }
+
     @include large {
         display: flex;
         justify-content: space-evenly;
@@ -72,6 +110,11 @@
 
 .tutorial__cards {
     display: flex;
+    justify-content: space-around;
+
+    @include small {
+        flex-wrap: wrap;
+    }
 }
 
 .tutorial__card {
@@ -80,10 +123,11 @@
     
     @include small {
         width: 100%;
+        margin-top: 15px;
     }
 
     @include medium {
-        width: 40%;
+        width: 48%;
     }
 
     @include large {
@@ -92,6 +136,11 @@
 
     & .tutorial__cardImage {
         max-width: 100%;
+
+        @include medium {
+            max-height: 200px;
+            overflow: hidden;
+        }
     }
 
     & img {
@@ -100,33 +149,65 @@
     }
 }
 
-.tutorial__cardText {
-    & h1 {
-        text-align: left;
-        margin: 30px 25px;
+.tutorial__cardLink {
+    @include small {
+        display: flex;
+        justify-content: left;
+        margin: 20px 0;
+    }
+}
+
+.tutorial__cardLink-icon {
+    @include small {
+        max-width: 24px;
+        width: 100;
+        margin-left: 15px;
+    }
+}
+
+.tutorial__cardText-titre {
+    margin: 30px 25px;
+
+    @include medium {
+        font-size: 25px;
     }
 
-    & p {
+    @include large {
+        text-align: left;
+    }
+}
+
+.tutorial__cardText-desc {
+    @include medium {
+        font-size: 18px;
+        line-heigt: 27px;
+    }
+
+    @include large {
         font-size: 14px;
         width: 80%;
     }
 }
 
 .tutorial__cardLink {
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    padding-bottom: 30px;
-
-    & a {
-        font-family: 'Futura Md BT';
-        font-size: 15px;
+    @include medium {
+        display: flex;
+        margin: 30px 0;
     }
-
+    
     & img {
-        margin-left: 10px;
-        max-width: 42px;
-        width: 100%;
+        @include medium {
+            width: 24px;
+            margin-left: 15px;
+        }
+    }
+}
+
+.tutorial__cardLink-desc {
+    @include medium {
+        font-size: 20px;
+        font-family: 'Futura Md BT';
+        line-height: 27px;
     }
 }
 
@@ -134,7 +215,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+
+    @include small {
+        display: none;
+    }
+
+    @include medium {
+        margin-top: 40px;
+    }
 
     @include large {
         display: none;
@@ -148,8 +236,7 @@
         border: 1px solid #E7E7E7;
         cursor: pointer;
     }
-
-    
+   
     .active {
         background: #E7E7E7;
     }

@@ -5,47 +5,78 @@
 .about {
     width: 100%;
     height: auto;
+    
+    @include small {
+        padding: 0 15px;
+    }
+
     @include large {
         padding: 0px 85px;
         display: flex;
     }
+
+    @include medium {
+        padding: 0 30px;
+    }
 }
 
 .about__blocTitle {
-    @include blocTitle;
+    width: 100%;
+    text-align: center;
 
     @include large {
-        position: relative;
         flex-wrap: wrap;
         width: 69%;
         margin: 15px 130px;
     }
 }
 
-.about__titleSquare {
-    @include square(#FFE36D);
+.about__wrapper {
+    display: flex;
+    align-items: center;
+
+    @include medium {
+        display: flex;
+        align-items: center;
+    }
 
     @include large {
-        position: absolute;
-        top: 11px;
-        right: -36px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
     }
+}
+
+.about__titleSquare {
+    @include square(#FFE36D);
 }
 
 .about__mainTitle {
     @include mainTitle;
-
+    
     @include large {
         width: 100%;
+        margin-right: 25px;
     }
 }
 
 .about__desc {
+
+    @include small {
+        margin-top: 35px;
+    }
+
+    @include medium {
+        margin-top: 50px;
+        line-height: 42px;
+    }
+
     @include large {
         font-size: 20px;
         text-align: right;
         margin-top: 45px;
-        line-hei: 30px;
+        margin: 45px 0;
+        line-height: 30px;
     }
 
 }
@@ -66,7 +97,7 @@
 
     @include small {
         font-size: 15px;
-        margin: 15px 25px;
+        margin: 25px;
     }
 
     @include medium {
@@ -106,6 +137,14 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    
+    @include medium {
+        flex-direction: row-reverse;
+    }
+
+    @include large {
+        flex-direction: row;
+    }
 
     & img {
         width: 100%;
@@ -115,15 +154,26 @@
 .about__item--visible {
     display: block;
 
+    @include small {
+        display: none;
+    }
+
     @include large {
         display: none;
     }
 }
 
 .about__item--hidden {
-    display: none;
-    
+    @include small {
+        display: none;
+    }
+
+    @include medium {
+        display: none;
+    }
+
     @include large {
         display: block;
     }
+
 }

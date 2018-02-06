@@ -3,15 +3,39 @@
 @import 'helpers/variables';
 
 .cook {
+
+    @include small {
+        padding: 0;
+    }
+
+    @include medium {
+        padding-top: 170px;
+        background: #F6F6F6;
+    }
+
+   @include large {
     width: 100%;
-    background: #F6F6F6;
     display: flex;
     padding-top: 170px;
     align-items: flex-end;
     padding-bottom: 70px;
+    background: #F6F6F6;
+   }
+
 }
 
 .cook__hero {
+
+    @include small {
+        background: #F6F6F6;
+        padding-top: 25px;
+    }
+
+    @include medium {
+        display: flex;
+        justify-content: center;
+        background: #EEEEEE;
+    }
 
     @include large {
         min-width: 561px;
@@ -23,6 +47,17 @@
     }
 
     & img {
+
+        @include small {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        @include medium {
+            width: auto;
+        }
+
         @include large {
             position: absolute;
             right: -60px;
@@ -32,35 +67,59 @@
 }
 
 .cook__blocTitle {
+    
+    @include small {
+        padding: 0 15px;
+        margin: 35px 0;
+    }
+
+    @include medium {
+        padding: 0 30px;
+    }
+
     @include large {
         margin: auto;
-        position: relative;
     }
 }
 
+.cook__wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .cook__mainTitle {
+
+    @include small {
+        margin: 35px 15px;
+    }
+
+    @include medium {
+        font-size: 40px;
+        margin: 85px 25px;
+    }
+
     @include large {
-        margin: 40px 0;
+        margin: 40px 25px;
     }
 }
 
 .cook__desc {
+
+    @include medium {
+        margin: 0 40px;
+    }
+
     @include large {
         font-size: 20px;
         margin: 0;
         width: 79%;
         line-height: 30px;
+        margin-left: 40px;
     }
 }
 
 .cook__titleSquare {
     @include square(#63A7FF);
-
-    @include large {
-        position: absolute;
-        top: 45px;
-        left: -37px;
-    }
 }
 
 .cook__player {
@@ -80,12 +139,12 @@
 
     @include medium {
         font-size: 30px;
-        margin: 40px 25px;
+        margin: 85px 40px;
     }
 
     @include large {
         font-size: 15px;
-        margin: 15px 0;
+        margin: 40px;
     }
 }
 
