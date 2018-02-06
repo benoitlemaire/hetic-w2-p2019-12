@@ -69,30 +69,31 @@ footer {
     align-items: center;
     justify-content: center;
 
-    & input {
-        padding: 24.5px 35px;
-        border: 1px solid #E9E9E9;
-        border-radius: 9px 0 0 9px;
-        box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.1);
-        width: calc(100% - 100px);
+    & img {
+        width: 70%;
+    }
 
-        @include medium {
-            width: 50%;
-        }
+}
 
-        @include large {
-            width: 25%;
-        }
+.footer__mail-field {
+    padding: 24.5px 35px;
+    border: 1px solid #E9E9E9;
+    border-radius: 9px 0 0 9px;
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 100px);
+
+    @include medium {
+        width: 50%;
+    }
+
+    @include large {
+        width: 25%;
     }
 
     & input::placeholder {
         color: #BBBBBB;
         font-size: 13px;
         font-family: 'Futura Md BT';
-    }
-
-    & img {
-        width: 70%;
     }
 
 }
@@ -141,16 +142,16 @@ footer {
         width: calc(75% / 4);
         text-align: left;
     }
+}
 
-    & a {
-        text-decoration: none;
-    }
+.footer__item-title {
+    font-size: 20px;
+    font-family: 'Futura BdCn BT';
+    text-transform: uppercase;
+}
 
-    & b {
-        font-size: 20px;
-        font-family: 'Futura BdCn BT';
-        text-transform: uppercase;
-    }
+.footer__item-links {
+    text-decoration: none;
 
     & li {
         font-size: 20px;
