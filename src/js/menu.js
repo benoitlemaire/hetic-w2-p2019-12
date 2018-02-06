@@ -20,22 +20,22 @@ export class Menu {
     })
   }
 
-  toggleSelect () {
-    const select = document.querySelector('.menu__list');
-    const hidden = document.querySelector('.menu__list--hiden');
-    let openSelect = false; 
+  // toggleSelect () {
+  //   const select = document.querySelector('.menu__list');
+  //   const hidden = document.querySelector('.menu__list--hiden');
+  //   let openSelect = false; 
 
-    select.addEventListener('click', function () {
-        if (openSelect) {
-            openSelect = false;
-            hidden.style.display = 'none';
-            console.log('close');
-        }else {
-            openSelect = true;
-            hidden.style.display = 'block';
-            console.log('open');
-        }
+  //   select.addEventListener('click', function () {
+  //       if (openSelect) {
+  //           openSelect = false;
+  //           hidden.style.display = 'none';
+  //           console.log('close');
+  //       }else {
+  //           openSelect = true;
+  //           hidden.style.display = 'block';
+  //           console.log('open');
+  //       }
         
-    })
-  }
+  //   })
+  // }
 }
