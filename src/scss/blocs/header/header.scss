@@ -30,6 +30,25 @@
     }
 }
 
+.header__wrapper {
+
+    @include small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include medium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include large {
+        display: block;
+    }
+}
+
 .header__titleSquare {
     width: 12px;
     height: 12px;
@@ -49,6 +68,7 @@
 
     @include medium{
         font-size: 75px;
+        flex-grow: 1;
     } 
 
     @include large {
