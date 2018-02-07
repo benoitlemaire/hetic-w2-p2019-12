@@ -94,11 +94,6 @@
     z-index: 3;
 }
 
-.menu__logo {
-    transition: 1s linear;
-    z-index: 3;
-}
-
 .menu__cta {
     width: 93px;
     height: 66px;
@@ -116,7 +111,7 @@
     height: 100vh;
     background: $white;
     transform: translateX(-100%);
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,0.10);
 }
 
