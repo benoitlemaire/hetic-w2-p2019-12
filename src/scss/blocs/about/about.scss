@@ -93,7 +93,7 @@
 
 .about__link {
     color: $black;
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
 
     @include small {
         font-size: 15px;

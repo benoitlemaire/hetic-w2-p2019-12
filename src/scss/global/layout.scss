@@ -14,12 +14,12 @@
 }
 
 h1 {
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
     font-size: 20px;
 }
 
 p {
-    font-family: 'Futura Md BT';
+    font-family: $futura-bold;
     
     @include small {
       font-size: 18px;
@@ -51,6 +51,6 @@ section {
 }
 
 section h1 {
-  font-family: 'Futura BdCn BT';
+  font-family: $futura-bold;
   margin-left: 15px;
 }
