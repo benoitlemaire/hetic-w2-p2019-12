@@ -13,13 +13,13 @@
         background: #F6F6F6;
     }
 
-   @include large {
-    width: 100%;
-    display: flex;
-    padding-top: 170px;
-    align-items: flex-end;
-    padding-bottom: 70px;
-    background: #F6F6F6;
+    @include large {
+        width: 100%;
+        display: flex;
+        padding-top: 170px;
+        align-items: flex-end;
+        padding-bottom: 70px;
+        background: #F6F6F6;
    }
 
 }
@@ -130,7 +130,7 @@
 
 .cook__link {
     color: $black;
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
 
     @include small {
         font-size: 15px;

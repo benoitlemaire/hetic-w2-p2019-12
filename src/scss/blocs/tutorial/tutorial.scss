@@ -75,7 +75,7 @@
     display: block;
     text-align: left;
     margin: 15px 25px;
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
 
     @include small {
         font-size: 15px;
@@ -206,7 +206,7 @@
 .tutorial__cardLink-desc {
     @include medium {
         font-size: 20px;
-        font-family: 'Futura Md BT';
+        font-family: $futura-medium;
         line-height: 27px;
     }
 }

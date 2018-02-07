@@ -41,7 +41,7 @@
         width: 50%;
         align-items: center;
         justify-content: space-between;
-        font-family: 'Futura Md BT';
+        font-family: $futura-medium;
     }
 }
 
@@ -122,7 +122,7 @@
 
 .menu__nav {
     margin-left: 15px;
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
 
     & li {
         list-style-type: none;
@@ -151,7 +151,7 @@
     background: url(../img/nav/arrow_down.png) no-repeat 100% center;
     color: $black;
     font-size: 14px;
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
     margin-top: 50px;
     margin-left: 15px;
     height: 34px;
@@ -179,5 +179,5 @@
     margin-left: 15px;
     display: block;
     font-size: 11px;
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
 }

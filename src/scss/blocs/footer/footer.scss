@@ -31,7 +31,7 @@ footer {
 }
 
 .footer__mainTitle {
-    font-family: 'Futura BdCn BT';
+    font-family: $futura-bold;
     color: #000000;
 
     @include medium {
@@ -93,7 +93,7 @@ footer {
     & input::placeholder {
         color: #BBBBBB;
         font-size: 13px;
-        font-family: 'Futura Md BT';
+        font-family: $futura-medium;
     }
 
 }
@@ -146,7 +146,7 @@ footer {
 
 .footer__item-title {
     font-size: 20px;
-    font-family: 'Futura BdCn BT';
+    font-family: $futura-bold;
     text-transform: uppercase;
 }
 
@@ -155,7 +155,7 @@ footer {
 
     & li {
         font-size: 20px;
-        font-family: 'Futura Md BT';
+        font-family: $futura-medium;
     }
 }
 
@@ -183,7 +183,7 @@ footer {
 }
 
 .footer__copyright {
-    font-family: 'Futura Md BT';
+    font-family: $futura-medium;
     font-size: 11px;
     margin-top: 30px;
     display: block;
